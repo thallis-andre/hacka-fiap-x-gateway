@@ -13,7 +13,7 @@ resource "aws_apigatewayv2_stage" "dev" {
 data "terraform_remote_state" "fiap_x_eks" {
   backend = "s3"
   config = {
-    bucket = "fiap-x-terraform-backend"
+    bucket = "fiap-x-terraform-backend-556930053725"
     key    = "global/s3/eks.tfstate"
     region = "us-east-1"
   }
